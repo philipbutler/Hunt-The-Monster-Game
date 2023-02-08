@@ -1,7 +1,7 @@
 # Hunt The Monster
 
 ## How to Run
-- You'll need Java 11 installed. You can grab that here https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+- You'll need Java 11 installed. You can grab that [here](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 - In your command line, cd (navigate) to .jar file location: 
 #### GUI
 ```sh
