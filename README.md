@@ -1,4 +1,4 @@
-# Hunt The Wumpus
+# Hunt The Monster
 
 ## How to Run
 - You'll need Java 11 installed. You can grab that here https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
@@ -43,7 +43,7 @@ where you can substitute the values after --text for: rows(int) cols(int) wrappi
 - I created the ImagePanes in the controller, which felt kind of wrong since it feels that images should only exist in the view, but they then get passed to the View to avoid the view from having access to any objects in the model
 
 ## Runs
-View accompanying screen captures in res/screenshots
+View accompanying screen captures in screenshots/
 
 ## Resources used
 https://zelda.gamepedia.com/Category:Four_Swords_Sprites
