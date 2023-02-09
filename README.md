@@ -1,7 +1,7 @@
 # Hunt The Monster (1-3 Players)
 
 ## How to Run
-- You'll need Java 11 installed. You can grab that [here](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
+- You'll need Java (11 or later) installed. You can grab that [here](https://www.oracle.com/java/technologies/downloads/#jdk19-mac)
 - In your command line, cd (navigate) to .jar file location:
 ```sh
 cd res
@@ -31,30 +31,21 @@ where you can substitute the values after --text for: rows(int) cols(int) wrappi
 | Right |             D             |            Right Arrow Key |                                 |
 | Shoot | Q (Hold, press direction) | /? (Hold, press direction) | Spacebar (Hold, Click Location) |
 
-
-## Asumptions, Design Changes, and Justifications
-- I was unsure the best way to input the distance for each player, and thought of a way that involved creating crosshairs for each player like player 3 has, but for time's sake decided to only allow players to shoot a distance of 1. 
-- The biggest change from the norm is that there is no turns in this version of the game, each player can move freely regardless of turns.
-- I created the ImagePanes in the controller, which felt kind of wrong since it feels that images should only exist in the view, but they then get passed to the View to avoid the view from having access to any objects in the model
-
 ### View gameplay pictures in `Hunt-The-Monster-Game/screenshots`
-
 ## Resources
-https://zelda.gamepedia.com/Category:Four_Swords_Sprites
-Demo code from Module 11
-https://piazza.com/class/keonixf87hw4bm?cid=694
-https://docs.oracle.com/javase/tutorial/uiswing/layout/grid.html
-http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html
-https://docs.oracle.com/javase/tutorial/uiswing/components/splitpane.html
-https://stackoverflow.com/questions/20922913/how-to-make-swing-windows-switch-between-content/20922950
-https://stackoverflow.com/questions/8961938/java-keylistener-not-registering-arrow-keys
-https://stackoverflow.com/questions/16586867/read-the-value-of-a-jslider
-https://stackoverflow.com/questions/29962395/how-to-write-a-keylistener-for-javafx
-https://stackoverflow.com/questions/15400781/how-to-get-int-value-from-spinner
-https://docs.oracle.com/javase/tutorial/uiswing/layout/card.html
-https://stackoverflow.com/questions/299495/how-to-add-an-image-to-a-jpanel
-https://stackoverflow.com/questions/50456806/jlayeredpane-image-not-showing-up
-https://blog.idrsolutions.com/2019/05/image-rotation-in-java/
-https://stackoverflow.com/questions/8277834/how-to-set-a-jframe-size-to-fit-the-cardlayout-displayed-jpanel/8279991#8279991
-https://stackoverflow.com/questions/31259373/how-to-remove-space-between-imageicons-in-gridlayout-java
-https://www.tutorialspoint.com/how-to-change-jlabel-font-in-java
+- [Zelda Sprites](https://zelda.gamepedia.com/Category:Four_Swords_Sprites)
+- [Swing GridLayout](https://docs.oracle.com/javase/tutorial/uiswing/layout/grid.html)
+- [Swing CardLayout](https://docs.oracle.com/javase/tutorial/uiswing/layout/card.html)
+- [Swing Spinners](http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html)
+- [Swing Split Panes](https://docs.oracle.com/javase/tutorial/uiswing/components/splitpane.html)
+- [SO CardLayout](https://stackoverflow.com/questions/20922913/how-to-make-swing-windows-switch-between-content/20922950)
+- [SO Key Events](https://stackoverflow.com/questions/8961938/java-keylistener-not-registering-arrow-keys)
+- [SO Read JSlider](https://stackoverflow.com/questions/16586867/read-the-value-of-a-jslider)
+- [SO KeyListener](https://stackoverflow.com/questions/29962395/how-to-write-a-keylistener-for-javafx)
+- [SO Get Spinner Value](https://stackoverflow.com/questions/15400781/how-to-get-int-value-from-spinner)
+- [SO Image to JPanel](https://stackoverflow.com/questions/299495/how-to-add-an-image-to-a-jpanel)
+- [SO Image not showing](https://stackoverflow.com/questions/50456806/jlayeredpane-image-not-showing-up)
+- [SO Fit JFrame to CardLayout](https://stackoverflow.com/questions/8277834/how-to-set-a-jframe-size-to-fit-the-cardlayout-displayed-jpanel/8279991#8279991)
+- [SO Remove Space in GridLayout](https://stackoverflow.com/questions/31259373/how-to-remove-space-between-imageicons-in-gridlayout-java)
+- [Image Rotation](https://blog.idrsolutions.com/2019/05/image-rotation-in-java/)
+- [Change JLabel Font](https://www.tutorialspoint.com/how-to-change-jlabel-font-in-java)
