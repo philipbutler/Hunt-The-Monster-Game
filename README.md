@@ -1,40 +1,35 @@
-# Hunt The Monster
+# Hunt The Monster (1-3 Players)
 
 ## How to Run
 - You'll need Java 11 installed. You can grab that [here](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
-- In your command line, cd (navigate) to .jar file location: 
-#### GUI
+- In your command line, cd (navigate) to .jar file location:
 ```sh
-$ java -jar HW6Swing.jar --gui
+cd res
+```
+
+#### GUI: The real way to play
+```sh
+java -jar play.jar --gui
 ```
 - Change any settings and hit "Generate" to start the game. (Try 3 Players!)
 - Attempt to find and kill the wumpus, while avoiding death
 - Go back to the menu to modify settings or restart the same maze at anytime
 
-#### Text
+#### Text: Game logic only, or to use your imagination
 ```sh
-$ java -jar HW6Swing.jar --text 5 5 true false 30 20 20 10 0
+java -jar HW6Swing.jar --text 5 5 true false 30 20 20 10 0
 ```
-where you can substitute the values after --text for: rows(int) cols(int) wrapping(t/f) perfect(t/f) wallsRemaining(int) numArrows(int) seed(int)
+where you can substitute the values after --text for: rows(int) cols(int) wrapping(true/false) perfect(true/false) wallsRemaining(int) numArrows(int) seed(int)
 
-## GUI Controls
-- Player 1 (green):
--- w : up
--- a : left
--- s : down
--- d : right
--- q : shoot arrow (hold down and press a direction to shoot an arrow with distance 1)
+## Controls
 
-- Player 2 (red):
--- up arrow key : up
--- left arrow key : left
--- down arrow key : down
--- right arrow key : right
--- /? : shoot arrow (hold down and press a direction to shoot an arrow with distance 1)
-
-- Player 3 (blue):
--- Click in an open cell around the blue character to move there.
--- SPACE : shoot arrow (a cross-hair will appear where the mouse hovers over. Once next to the Wumpus hold down SPACE and click where you think he is!)
+| Move  |      Player 1 (Red)       |           Player 2 (Green) | Player 3 (Blue)                 |
+|:------|:-------------------------:|---------------------------:|---------------------------------|
+| Up    |             W             |               Up Arrow Key | Click Adjacent Cell to move     |
+| Down  |             A             |             Down Arrow Key |                                 |
+| Left  |             S             |             Left Arrow Key |                                 |
+| Right |             D             |            Right Arrow Key |                                 |
+| Shoot | Q (Hold, press direction) | /? (Hold, press direction) | Spacebar (Hold, Click Location) |
 
 
 ## Asumptions, Design Changes, and Justifications
@@ -42,10 +37,9 @@ where you can substitute the values after --text for: rows(int) cols(int) wrappi
 - The biggest change from the norm is that there is no turns in this version of the game, each player can move freely regardless of turns.
 - I created the ImagePanes in the controller, which felt kind of wrong since it feels that images should only exist in the view, but they then get passed to the View to avoid the view from having access to any objects in the model
 
-## Runs
-View accompanying screen captures in screenshots/
+### View gameplay pictures in `Hunt-The-Monster-Game/screenshots`
 
-## Resources used
+## Resources
 https://zelda.gamepedia.com/Category:Four_Swords_Sprites
 Demo code from Module 11
 https://piazza.com/class/keonixf87hw4bm?cid=694
