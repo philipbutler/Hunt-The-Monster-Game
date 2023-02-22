@@ -1,6 +1,6 @@
 # Hunt The Monster (1-3 Players)
 
-![gameplay](https://github.com/philipbutler/Hunt-The-Monster-Game/blob/main/screenshots/Screen%20Shot%202020-12-07%20at%209.23.25%20PM.png)
+![gameplay](https://github.com/philipbutler/Hunt-The-Monster-Game/blob/main/screenshots/win.png)
 
 ## How to Run
 - You'll need Java (11 or later) installed. You can grab that [here](https://www.oracle.com/java/technologies/downloads/#jdk19-mac)
