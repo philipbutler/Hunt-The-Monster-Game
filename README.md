@@ -1,5 +1,6 @@
 # Hunt The Monster (1-3 Players)
 
+## Gameplay Screenshot
 ![gameplay](https://github.com/philipbutler/Hunt-The-Monster-Game/blob/main/screenshots/win.png)
 
 ## How to Run
